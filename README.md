@@ -20,13 +20,9 @@ A graphical editor and analyzer for **TLV (Tag-Length-Value)** data, built for d
 
 ## 📸 Preview
 
-*(`app.png`)*
-
-```markdown
 ![App preview](app.png)
-```
 
-## 🚀 Installation
+##  Installation
 
 ### Requirements
 - Python 3.10 or higher
