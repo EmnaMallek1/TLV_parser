@@ -1,0 +1,1879 @@
+{
+  "9F01": [
+    {
+      "name": "Acquirer Identifier",
+      "length_rule": {
+        "type": "range",
+        "min": 3,
+        "max": 6
+      },
+      "length_raw": "3–6",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "9F06": [
+    {
+      "name": "Application Identifier (AID)",
+      "length_rule": {
+        "type": "range",
+        "min": 5,
+        "max": 10
+      },
+      "length_raw": "5–10",
+      "templates": [
+        "E2",
+        "F0"
+      ]
+    }
+  ],
+  "9F09": [
+    {
+      "name": "Application Version Number",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "9F15": [
+    {
+      "name": "Merchant Category Code (MCC)",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "9F16": [
+    {
+      "name": "Merchant Identifier",
+      "length_rule": {
+        "type": "exact",
+        "value": 15
+      },
+      "length_raw": "15",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "9F1A": [
+    {
+      "name": "Terminal Country Code",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "9F1C": [
+    {
+      "name": "Terminal Identification",
+      "length_rule": {
+        "type": "exact",
+        "value": 8
+      },
+      "length_raw": "8",
+      "templates": []
+    }
+  ],
+  "9F1D": [
+    {
+      "name": "Terminal Risk Management Data",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "9F1E": [
+    {
+      "name": "Interface Device (IFD) Serial Number",
+      "length_rule": {
+        "type": "exact",
+        "value": 8
+      },
+      "length_raw": "8",
+      "templates": []
+    }
+  ],
+  "9F22": [
+    {
+      "name": "Key Index",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "9F33": [
+    {
+      "name": "Terminal Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "9F35": [
+    {
+      "name": "Terminal Type",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": []
+    }
+  ],
+  "9F40": [
+    {
+      "name": "Additional Terminal Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "9F41": [
+    {
+      "name": "Transaction Sequence Counter (Trace Number)",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": []
+    }
+  ],
+  "9F4E": [
+    {
+      "name": "Merchant Name and Location",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "9F53": [
+    {
+      "name": "Transaction Category Code",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "9F66": [
+    {
+      "name": "Terminal Transaction Qualifiers (TTQ)",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "9F6D": [
+    {
+      "name": "Mag-Stripe Application Version Number",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    },
+    {
+      "name": "Contactless Reader Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "9F6E": [
+    {
+      "name": "Enhanced Contactless Reader Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "9F7C": [
+    {
+      "name": "Merchant Custom Data",
+      "length_rule": {
+        "type": "exact",
+        "value": 32
+      },
+      "length_raw": "32",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF01": [
+    {
+      "name": "Kernel Identifier (Kernel ID)",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    },
+    {
+      "name": "GeldKarte Load Reservation Activation",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FA"
+      ]
+    }
+  ],
+  "DF02": [
+    {
+      "name": "Limit Value",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FA"
+      ]
+    },
+    {
+      "name": "Status Check Support Flag",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF03": [
+    {
+      "name": "GeldKarte Maximum Payment Amount",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FA"
+      ]
+    },
+    {
+      "name": "Zero Amount Allowed Flag",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF04": [
+    {
+      "name": "GeldKarte Default Load Amount",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FA"
+      ]
+    },
+    {
+      "name": "Reader Contactless Transaction Limit Pre-Processing (in configuration currency)",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    },
+    {
+      "name": "Action Data Object",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": []
+    }
+  ],
+  "DF05": [
+    {
+      "name": "GeldKarte Load Threshold",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FA"
+      ]
+    },
+    {
+      "name": "Reader Contactless Floor Limit Pre-Processing (in configuration currency)",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF06": [
+    {
+      "name": "Identification of the PAN-Based Application (MID)",
+      "length_rule": {
+        "type": "range",
+        "min": 1,
+        "max": 10
+      },
+      "length_raw": "1–10",
+      "templates": [
+        "E2",
+        "F8"
+      ]
+    },
+    {
+      "name": "GeldKarte Receipt Parameter",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FA"
+      ]
+    },
+    {
+      "name": "Reader CVM Required Limit Pre-Processing (in configuration currency)",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF07": [
+    {
+      "name": "Supported Transaction Type(s)",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF08": [
+    {
+      "name": "Extended Selection Support Flag",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF09": [
+    {
+      "name": "Kernel Priority",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF0A": [
+    {
+      "name": "Application Label (Default)",
+      "length_rule": {
+        "type": "range",
+        "min": 1,
+        "max": 16
+      },
+      "length_raw": "1–16",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF0B": [
+    {
+      "name": "Application Selection Indicator (ASI)",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2"
+      ]
+    },
+    {
+      "name": "Zero Amount for Offline Allowed Flag",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF0C": [
+    {
+      "name": "Default DDOL",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF0D": [
+    {
+      "name": "Default TDOL",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF0E": [
+    {
+      "name": "Threshold Value for Biased Random Selection",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF0F": [
+    {
+      "name": "Maximum Target Percentage for Biased Random Selection",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF10": [
+    {
+      "name": "Target Percentage for Biased Random Selection",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF11": [
+    {
+      "name": "TAC-Denial",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF12": [
+    {
+      "name": "Terminal Action Code – Online (TAC-Online)",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF13": [
+    {
+      "name": "Terminal Action Code – Default (TAC-Default)",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF14": [
+    {
+      "name": "Floor Limit for Magnetic Stripe Transactions",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "E2"
+      ]
+    },
+    {
+      "name": "Reader Contactless Transaction Limit – No On-device CVM (in configuration currency)",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF15": [
+    {
+      "name": "Merchant Identifier",
+      "length_rule": {
+        "type": "exact",
+        "value": 15
+      },
+      "length_raw": "15",
+      "templates": [
+        "E2"
+      ]
+    },
+    {
+      "name": "Reader Contactless Transaction Limit",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF16": [
+    {
+      "name": "Reader CVM Required Limit",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF17": [
+    {
+      "name": "Kernel 4 Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF18": [
+    {
+      "name": "Fallback Parameter",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2"
+      ]
+    },
+    {
+      "name": "Removal Timeout",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF19": [
+    {
+      "name": "Card Data Required",
+      "length_rule": {
+        "type": "max",
+        "value": 30
+      },
+      "length_raw": "variable (max. 30)",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF1B": [
+    {
+      "name": "Terminal Configuration Currency",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF1C": [
+    {
+      "name": "Terminal Configuration Currency Exponent",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF20": [
+    {
+      "name": "Combination Options",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF21": [
+    {
+      "name": "Terminal Interchange Profile (static)",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF22": [
+    {
+      "name": "Permitted Special Transactions",
+      "length_rule": {
+        "type": "exact",
+        "value": 8
+      },
+      "length_raw": "8",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF23": [
+    {
+      "name": "Maximum Number of Consecutive Offline Transactions",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF24": [
+    {
+      "name": "Kernel-Specific Terminal Type Configuration",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF25": [
+    {
+      "name": "Receipt Parameters",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF26": [
+    {
+      "name": "Floor Limit for Chip Transactions",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF27": [
+    {
+      "name": "Restricted Terminal Capabilities per Application",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF28": [
+    {
+      "name": "Restricted Additional Terminal Capabilities per Application",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": []
+    }
+  ],
+  "DF29": [
+    {
+      "name": "CA Hash Algorithm Identifier",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF2A": [
+    {
+      "name": "Configuration of Product Display and Language Selection",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF2C": [
+    {
+      "name": "PAN Prefix (leading PAN digits)",
+      "length_rule": {
+        "type": "range",
+        "min": 1,
+        "max": 10
+      },
+      "length_raw": "1–10",
+      "templates": [
+        "F9"
+      ]
+    }
+  ],
+  "DF2D": [
+    {
+      "name": "Activation Date (YYYYMMDD)",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "F9"
+      ]
+    }
+  ],
+  "DF2E": [
+    {
+      "name": "Expiry Date (YYYYMMDD)",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "F9"
+      ]
+    }
+  ],
+  "DF2F": [
+    {
+      "name": "Enablement of Early PIN Entry",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF30": [
+    {
+      "name": "CA Signature Algorithm Identifier",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF31": [
+    {
+      "name": "Public Modulus",
+      "length_rule": {
+        "type": "max",
+        "value": 248
+      },
+      "length_raw": "variable (max. 248)",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF32": [
+    {
+      "name": "Public Exponent",
+      "length_rule": {
+        "type": "choice",
+        "values": [
+          1,
+          3
+        ]
+      },
+      "length_raw": "1 or 3",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF33": [
+    {
+      "name": "Checksum for Integrity Protection",
+      "length_rule": {
+        "type": "exact",
+        "value": 20
+      },
+      "length_raw": "14",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF34": [
+    {
+      "name": "Registered Application Provider Identifier (RID)",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "E1"
+      ]
+    }
+  ],
+  "DF35": [
+    {
+      "name": "Application Country Code",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF36": [
+    {
+      "name": "Random Number Range",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF37": [
+    {
+      "name": "Final Selection Configuration",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF38": [
+    {
+      "name": "Transaction Type for Kernel Processing",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF39": [
+    {
+      "name": "Journal DOL",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF40": [
+    {
+      "name": "Merchant Receipt DOL – Online Authorised Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF41": [
+    {
+      "name": "Merchant Receipt DOL – Offline Approved Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF42": [
+    {
+      "name": "Merchant Receipt DOL – Offline Declined or Aborted Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF43": [
+    {
+      "name": "Customer Receipt DOL – Online Authorised Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF44": [
+    {
+      "name": "Customer Receipt DOL – Offline Approved Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF45": [
+    {
+      "name": "Customer Receipt DOL – Offline Declined or Aborted Transactions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF46": [
+    {
+      "name": "Required Magnetic Stripe Track(s)",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "DF47": [
+    {
+      "name": "PIN Try Counter Parameters",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF48": [
+    {
+      "name": "Terminal Language",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF49": [
+    {
+      "name": "Specific Terminal Capabilities",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "E0"
+      ]
+    }
+  ],
+  "DF4A": [
+    {
+      "name": "Restricted Terminal Capabilities for Cashback",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "E2",
+        "FB"
+      ]
+    }
+  ],
+  "DF4B": [
+    {
+      "name": "Discretionary Data Object List",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF4C": [
+    {
+      "name": "Kernel Configuration for Online Authorisation and Completion (KKOA)",
+      "length_rule": {
+        "type": "exact",
+        "value": 4
+      },
+      "length_raw": "4",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF4F": [
+    {
+      "name": "Configuration Control Field",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": []
+    }
+  ],
+  "DF8104": [
+    {
+      "name": "Balance Before GENERATE AC",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8105": [
+    {
+      "name": "Balance After GENERATE AC",
+      "length_rule": {
+        "type": "exact",
+        "value": 6
+      },
+      "length_raw": "6",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8117": [
+    {
+      "name": "Card Data Input Capability",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8118": [
+    {
+      "name": "CVM Capability – CVM Required",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8119": [
+    {
+      "name": "CVM Capability – No CVM Required",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811A": [
+    {
+      "name": "Default UDOL",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811B": [
+    {
+      "name": "Kernel Configuration",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811C": [
+    {
+      "name": "Max Lifetime of Torn Transaction Log Record",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811D": [
+    {
+      "name": "Max Number of Torn Transaction Log Records",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811E": [
+    {
+      "name": "Mag-Stripe CVM Capability – CVM Required",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF811F": [
+    {
+      "name": "Security Capability",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8123": [
+    {
+      "name": "Reader Contactless Floor Limit (in Transaction Currency)",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8124": [
+    {
+      "name": "Reader Contactless Transaction Limit (No On-Device CVM) (in Transaction Currency)",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8125": [
+    {
+      "name": "Reader Contactless Transaction Limit (On-Device CVM) (in Transaction Currency)",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8126": [
+    {
+      "name": "Reader CVM Required Limit (in Transaction Currency)",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8127": [
+    {
+      "name": "Time Out Value",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF812C": [
+    {
+      "name": "Mag-Stripe CVM Capability – No CVM Required",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF812D": [
+    {
+      "name": "Message Hold Time",
+      "length_rule": {
+        "type": "exact",
+        "value": 3
+      },
+      "length_raw": "3",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8130": [
+    {
+      "name": "Hold Time Value",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8131": [
+    {
+      "name": "Phone Message Table",
+      "length_rule": {
+        "type": "max",
+        "value": 128
+      },
+      "length_raw": "variable (max. 128)",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8132": [
+    {
+      "name": "Minimum Relay Resistance Grace Period",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8133": [
+    {
+      "name": "Maximum Relay Resistance Grace Period",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8134": [
+    {
+      "name": "Terminal Expected Transmission Time For Relay Resistance C-APDU",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8135": [
+    {
+      "name": "Terminal Expected Transmission Time For Relay Resistance R-APDU",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8136": [
+    {
+      "name": "Relay Resistance Accuracy Threshold",
+      "length_rule": {
+        "type": "exact",
+        "value": 2
+      },
+      "length_raw": "2",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8137": [
+    {
+      "name": "Relay Resistance Transmission Time Mismatch Threshold",
+      "length_rule": {
+        "type": "exact",
+        "value": 1
+      },
+      "length_raw": "1",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF813A": [
+    {
+      "name": "Extended Kernel Configuration",
+      "length_rule": {
+        "type": "exact",
+        "value": 5
+      },
+      "length_raw": "5",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF813B": [
+    {
+      "name": "Specific Terminal Capabilities",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": []
+    }
+  ],
+  "DF8301": [
+    {
+      "name": "Terminal Relay Resistance Entropy",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8302": [
+    {
+      "name": "Device Relay Resistance Entropy",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8303": [
+    {
+      "name": "Min Time For Processing Relay Resistance APDU",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8304": [
+    {
+      "name": "Max Time For Processing Relay Resistance APDU",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8305": [
+    {
+      "name": "Device Estimated Transmission Time For Relay Resistance R-APDU",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8306": [
+    {
+      "name": "Measured Relay Resistance Processing Time",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "DF8307": [
+    {
+      "name": "RRP Counter",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "E0": [
+    {
+      "name": "Terminal-Specific Configuration Data",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E1": [
+    {
+      "name": "Payment-System-Specific Configuration Data",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E2": [
+    {
+      "name": "Application-Specific Configuration Data / Application Record",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "F1"
+      ]
+    }
+  ],
+  "E4": [
+    {
+      "name": "poseindon emv ce data template 1",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E5": [
+    {
+      "name": "poseindon emv ce data template 2",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E6": [
+    {
+      "name": "poseindon emv ce data template 3",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E7": [
+    {
+      "name": "poseindon emv ce data template 4",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E8": [
+    {
+      "name": "poseindon emv ce data template 5",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "E9": [
+    {
+      "name": "poseindon emv ce data template 6",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "EA": [
+    {
+      "name": "Reader Limit Set",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "FB"
+      ]
+    }
+  ],
+  "F0": [
+    {
+      "name": "Priority Applications",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "F1": [
+    {
+      "name": "Identifying Magnetic Stripe Data",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "F2": [
+    {
+      "name": "Unknown",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "F8": [
+    {
+      "name": "Associated Magnetic Stripe Applications",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "E2"
+      ]
+    }
+  ],
+  "F9": [
+    {
+      "name": "Prefix with Optional Validity",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": [
+        "F1"
+      ]
+    }
+  ],
+  "FA": [
+    {
+      "name": "GeldKarte Load Configuration",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "FB": [
+    {
+      "name": "Kernel Configuration Data (Kernel Record)",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ],
+  "FD": [
+    {
+      "name": "Disallowed PIX Extensions",
+      "length_rule": {
+        "type": "any"
+      },
+      "length_raw": "variable",
+      "templates": []
+    }
+  ]
+}
