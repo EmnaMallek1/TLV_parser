@@ -20,10 +20,10 @@ A graphical editor and analyzer for **TLV (Tag-Length-Value)** data, built for d
 
 ## 📸 Preview
 
-*(`C:/Users/Lenovo/Downloads/app.png`)*
+*(`app.png`)*
 
 ```markdown
-![App preview](C:/Users/Lenovo/Downloads/app.png)
+![App preview](app.png)
 ```
 
 ## 🚀 Installation
