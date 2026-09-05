@@ -1,0 +1,1714 @@
+{
+  "BIT_DEFINITIONS": [
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 1 – Card Data Input",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Manual key entry"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 1 – Card Data Input",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Magnetic stripe"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 1 – Card Data Input",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "IC with contacts"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 1 – Card Data Input",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "No CVM required"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 2 – CVM Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Plaintext PIN for ICC verification"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 2 – CVM Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Enciphered PIN for online verification"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 2 – CVM Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Signature (paper)"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 2 – CVM Capability",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Enciphered PIN for offline verification"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 2 – CVM Capability",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "No CVM required"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 3 – Security Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "SDA"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 3 – Security Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "DDA"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 3 – Security Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Card capture"
+    },
+    {
+      "Tag": "9F33",
+      "Byte": "Byte 3 – Security Capability",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "CDA"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Cash"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Goods"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Services"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Cashback"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Inquiry"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Transfer"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "Payment"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 1 – Transaction Type Capability",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "Administrative"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 2 – Transaction Type Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Cash deposit"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 3 – Terminal Data Input Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Numeric keys"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 3 – Terminal Data Input Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Alphabetic and special characters keys"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 3 – Terminal Data Input Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Command keys"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 3 – Terminal Data Input Capability",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Function keys"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Print, attendant"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Print, cardholder"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Display, attendant"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Display, cardholder"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Code table 10"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Code table 9"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "Code table 8"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 4 – Terminal Data Output Capability",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "Code table 7"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Code table 6"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Code table 5"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Code table 4"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Code table 3"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Code table 2"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Code table 1"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "9F40",
+      "Byte": "Byte 5 – Terminal Data Output Capability",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "Code table 1 (ISO 646)"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Offline DA not performed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "SDA failed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "ICC data missing"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Card on exception file"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "DDA failed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 1 – Offline Data Auth",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "CDA failed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 2 – Appl / Issuer Data",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "ICC/terminal differ on appl version"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 2 – Appl / Issuer Data",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Expired application"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 2 – Appl / Issuer Data",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Application not yet effective"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 2 – Appl / Issuer Data",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Requested service not allowed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 2 – Appl / Issuer Data",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "New card"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Cardholder verification was not successful"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Unrecognised CVM"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "PIN Try Limit exceeded"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "PIN entry required but pad not present"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "PIN entry required but PIN not entered"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 3 – Cardholder Verification",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Online PIN entered"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 4 – Terminal Risk Mgmt",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Transaction exceeds floor limit"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 4 – Terminal Risk Mgmt",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Lower consecutive offline limit exceeded"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 4 – Terminal Risk Mgmt",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Upper consecutive offline limit exceeded"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 4 – Terminal Risk Mgmt",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Transaction selected randomly for online"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 4 – Terminal Risk Mgmt",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Merchant forced transaction online"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 5 – Issuer Appl Processing",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Default TDOL used"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 5 – Issuer Appl Processing",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Issuer authentication failed"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 5 – Issuer Appl Processing",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Script processing failed before final GENERATE AC"
+    },
+    {
+      "Tag": "95",
+      "Byte": "Byte 5 – Issuer Appl Processing",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Script processing failed after final GENERATE AC"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Offline data authentication performed"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Cardholder verification performed"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Card risk management performed"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Issuer authentication performed"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Terminal risk management performed"
+    },
+    {
+      "Tag": "9B",
+      "Byte": "Byte 1 – Transaction Status",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Script processing performed"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "SDA supported"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "DDA supported"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Cardholder verification supported"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Terminal risk management performed"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Issuer authentication supported"
+    },
+    {
+      "Tag": "82",
+      "Byte": "Byte 1 – Application Interchange Profile",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "CDA supported"
+    },
+    {
+      "Tag": "9F27",
+      "Byte": "Byte 1 – Cryptogram Information Data",
+      "Bit": "Bits 8-7",
+      "Mask": "0xC0",
+      "Description": "Cryptogram type"
+    },
+    {
+      "Tag": "9F27",
+      "Byte": "Byte 1 – Cryptogram Information Data",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Advice required"
+    },
+    {
+      "Tag": "9F27",
+      "Byte": "Byte 1 – Cryptogram Information Data",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Reason/advice code present"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Offl. DA not performed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "SDA failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "ICC data missing"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Card on exception list"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "DDA failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "CDA failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 1",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "SDA selected"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 2",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Appl versions differ"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Appl expired"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 2",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Appl not effective yet"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 2",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Requested service not allowed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 2",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "New card"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "CV failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Unrecognised CVM"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "PIN try limit exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "PIN entry required but PP not working"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "PIN entry required but PIN not entered"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 3",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Online PIN entered"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 4",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Floor limit exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 4",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "LCOL exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 4",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "UCOL exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 4",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Random online"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 4",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Merchant forced online"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Default PDOL used"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Issuer auth. failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Critical script failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Non critical script failed"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Relay Resistance Threshold exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Relay Resistance Time Limit exceeded"
+    },
+    {
+      "Tag": "DF11",
+      "Byte": "Byte 5",
+      "Bit": "Bits 2-1",
+      "Mask": "0x03",
+      "Description": "Relay Resistance Protocol supported"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Valid for domestic cash transactions"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Valid for international cash transactions"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Valid for domestic goods"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Valid for international goods"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Valid for domestic services"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Valid for international services"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "Valid at ATMs"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 1 – Usage Control",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "Valid at terminals other than ATMs"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Domestic cashback allowed"
+    },
+    {
+      "Tag": "9F07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "International cashback allowed"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "MSD supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "qVSDC supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "EMV contact chip supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Offline-only reader"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Online PIN supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Signature supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "Offline Data Auth for online auth supported"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 1 – TTQ",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "Online cryptogram required"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 2",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "CVM required"
+    },
+    {
+      "Tag": "9F66",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Contact chip offline PIN supported"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 1",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "IC with contacts"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 2",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Plaintext PIN for ICC verification"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Enciphered PIN for online verification"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 2",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Signature (paper)"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 2",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Enciphered PIN for offline verification"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 3",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "SDA"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 3",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "DDA"
+    },
+    {
+      "Tag": "DF27",
+      "Byte": "Byte 3",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "CDA"
+    },
+    {
+      "Tag": "DF28",
+      "Byte": "Byte 1 - Transaction Type Capability",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Goods"
+    },
+    {
+      "Tag": "DF28",
+      "Byte": "Byte 1 - Transaction Type Capability",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "Services"
+    },
+    {
+      "Tag": "DF28",
+      "Byte": "Byte 2 - Transaction Type Capability",
+      "Bit": null,
+      "Mask": null,
+      "Description": null
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "payment without cashback (including tip and tipable)"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "initial reservation"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "reservation increase"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 1",
+      "Mask": "0x01",
+      "Description": "booking"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 4 ",
+      "Mask": "0x08",
+      "Description": "manual storno"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "refund"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "cash withdrawal"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 1",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "payment with cashback"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 1 ",
+      "Mask": "0x01",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF07",
+      "Byte": "Byte 2",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "RFU"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 1",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Offl. DA not performed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 1",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "SDA failed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 1",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Card on exception list"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 1",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "DDA failed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 1",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "CDA failed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Appl expired"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 2",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Requested service not allowed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "CV failed"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 7 ",
+      "Mask": "0x40",
+      "Description": "Unrecognised CVM"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "PIN try limit exceeded"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "PIN entry required but PP not working "
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "PIN entry required but PIN not entered"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 3",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Online PIN entered"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 4",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Floor limit exceeded"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 4",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Random online"
+    },
+    {
+      "Tag": "DF13",
+      "Byte": "Byte 4",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Merchant forced online"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Offl. DA not performed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "SDA failed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Card on exception list"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "DDA failed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "CDA failed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 1",
+      "Bit": "Bit 2",
+      "Mask": "0x02",
+      "Description": "SDA selected"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 8 ",
+      "Mask": "0x80",
+      "Description": "CV failed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 7 ",
+      "Mask": "0x40",
+      "Description": "Unrecognised CVM"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "PIN try limit exceeded"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "PIN entry required but PP not working"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "PIN entry required but PIN not entered"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 3",
+      "Bit": "Bit 3",
+      "Mask": "0x04",
+      "Description": "Online PIN entered"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 2",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "Appl expired"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 2",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Requested service not allowed"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 4",
+      "Bit": "Bit 8",
+      "Mask": "0x80",
+      "Description": "Floor limit exceeded"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 4",
+      "Bit": "Bit 7",
+      "Mask": "0x40",
+      "Description": "LCOL exceeded"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 4",
+      "Bit": "Bit 6",
+      "Mask": "0x20",
+      "Description": "UCOL exceeded"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 4",
+      "Bit": "Bit 5",
+      "Mask": "0x10",
+      "Description": "Random online"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 4",
+      "Bit": "Bit 4",
+      "Mask": "0x08",
+      "Description": "Merchant forced online"
+    },
+    {
+      "Tag": "DF12",
+      "Byte": "Byte 5",
+      "Bit": "Bits 2+1",
+      "Mask": "0x03",
+      "Description": "Relay Resistance Protocol: not supported"
+    }
+  ],
+  "POSITION_DEFINITIONS": [
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 1,
+      "Position Label": "Manual Reversal",
+      "Nibble Value": 0,
+      "Meaning": "Not Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 1,
+      "Position Label": "Manual Reversal",
+      "Nibble Value": 1,
+      "Meaning": "Variant A allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 1,
+      "Position Label": "Manual Reversal",
+      "Nibble Value": 2,
+      "Meaning": "Variant B allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 1,
+      "Position Label": "Manual Reversal",
+      "Nibble Value": 3,
+      "Meaning": "Variants A+B allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 2,
+      "Position Label": "Refund",
+      "Nibble Value": 0,
+      "Meaning": "Not Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 2,
+      "Position Label": "Refund",
+      "Nibble Value": 1,
+      "Meaning": "Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 2,
+      "Position Label": "Refund",
+      "Nibble Value": 2,
+      "Meaning": "Only with original transaction data"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 3,
+      "Position Label": "Reservation",
+      "Nibble Value": 0,
+      "Meaning": "Not Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 3,
+      "Position Label": "Reservation",
+      "Nibble Value": 1,
+      "Meaning": "Online A, without supplementary"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 3,
+      "Position Label": "Reservation",
+      "Nibble Value": 2,
+      "Meaning": "Online A, with supplementary"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 3,
+      "Position Label": "Reservation",
+      "Nibble Value": 3,
+      "Meaning": "Online B"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 3,
+      "Position Label": "Reservation",
+      "Nibble Value": 4,
+      "Meaning": "Offline"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 4,
+      "Position Label": "Tip",
+      "Nibble Value": 0,
+      "Meaning": "Not Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 4,
+      "Position Label": "Tip",
+      "Nibble Value": 1,
+      "Meaning": "Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 5,
+      "Position Label": "Referral",
+      "Nibble Value": 0,
+      "Meaning": "Not Required"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 5,
+      "Position Label": "Referral",
+      "Nibble Value": 1,
+      "Meaning": "Required"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 6,
+      "Position Label": "Voice authorization",
+      "Nibble Value": 0,
+      "Meaning": "Not Required"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 6,
+      "Position Label": "Voice authorization",
+      "Nibble Value": 1,
+      "Meaning": "Required"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 7,
+      "Position Label": "DC POS 2.5: CDA Mode configuration",
+      "Nibble Value": 0,
+      "Meaning": "Mode 1"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 7,
+      "Position Label": "DC POS 2.5: CDA Mode configuration",
+      "Nibble Value": 1,
+      "Meaning": "Mode 2"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 8,
+      "Position Label": "DC POS 2.5: Extended Fallback rules",
+      "Nibble Value": 0,
+      "Meaning": "Fallback not allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 8,
+      "Position Label": "DC POS 2.5: Extended Fallback rules",
+      "Nibble Value": 1,
+      "Meaning": "Fallback allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 9,
+      "Position Label": "Treatment of card errors after online success",
+      "Nibble Value": 0,
+      "Meaning": "Don't ignore card errors"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 9,
+      "Position Label": "Treatment of card errors after online success",
+      "Nibble Value": 1,
+      "Meaning": "Ignore card errors"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 10,
+      "Position Label": "DCC cless",
+      "Nibble Value": 0,
+      "Meaning": "Not allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 10,
+      "Position Label": "DCC cless",
+      "Nibble Value": 1,
+      "Meaning": "Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 11,
+      "Position Label": "Voice referral cless",
+      "Nibble Value": 0,
+      "Meaning": "Not allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 11,
+      "Position Label": "Voice referral cless",
+      "Nibble Value": 1,
+      "Meaning": "Allowed"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 12,
+      "Position Label": "Cardholder Authentication",
+      "Nibble Value": 0,
+      "Meaning": "Standard"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 12,
+      "Position Label": "Cardholder Authentication",
+      "Nibble Value": 1,
+      "Meaning": "Enhanced"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 13,
+      "Position Label": "Response Code 65 handling",
+      "Nibble Value": 0,
+      "Meaning": "Standard display"
+    },
+    {
+      "Tag": "DF22",
+      "Tag Label": "ZKA_TM_TRANSACTION_RESTRICTIONS",
+      "Position": 13,
+      "Position Label": "Response Code 65 handling",
+      "Nibble Value": 1,
+      "Meaning": "Display text with fallback"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 1,
+      "Position Label": "Merchant receipt configuration",
+      "Nibble Value": 0,
+      "Meaning": "No merchant receipt"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 1,
+      "Position Label": "Merchant receipt configuration",
+      "Nibble Value": 1,
+      "Meaning": "Merchant receipt only for authorized transactions"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 1,
+      "Position Label": "Merchant receipt configuration",
+      "Nibble Value": 2,
+      "Meaning": "Merchant receipts for all transactions"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 2,
+      "Position Label": "Customer receipt configuration",
+      "Nibble Value": 0,
+      "Meaning": "No customer receipt"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 2,
+      "Position Label": "Customer receipt configuration",
+      "Nibble Value": 1,
+      "Meaning": "Customer receipt only for authorized transactions"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 2,
+      "Position Label": "Customer receipt configuration",
+      "Nibble Value": 2,
+      "Meaning": "Customer receipts for all transactions"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 3,
+      "Position Label": "Additional merchant receipt configuration",
+      "Nibble Value": 0,
+      "Meaning": "Masked PAN, no expiry date"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 3,
+      "Position Label": "Additional merchant receipt configuration",
+      "Nibble Value": 1,
+      "Meaning": "Masked PAN + expiry date"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 3,
+      "Position Label": "Additional merchant receipt configuration",
+      "Nibble Value": 2,
+      "Meaning": "Full PAN, no expiry date"
+    },
+    {
+      "Tag": "DF25",
+      "Tag Label": "ZKA_TM_TICKET_PARAMETER",
+      "Position": 3,
+      "Position Label": "Additional merchant receipt configuration",
+      "Nibble Value": 3,
+      "Meaning": "Full PAN + expiry date"
+    }
+  ]
+}
